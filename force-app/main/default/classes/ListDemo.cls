@@ -54,7 +54,7 @@ public class ListDemo{
         System.debug('Size of li2 - '+li2.size());          //size()
         
         System.debug('li2 before sort - '+li2);
-        li2.sort();
+        li2.sort();                                         //sort()
         System.debug('li2 after sort - '+li2);
     }
 }
