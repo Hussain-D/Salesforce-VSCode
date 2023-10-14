@@ -4,7 +4,7 @@ List Methods:
         - addAll(fromList)              - addAll(fromSet)
         - clear()                       - clone()
         - contains(listElement)         - equals()
-        - get(index)                    - getSObjetType()
+        - get(index)                    - getSObjectType()
         - indexOf()                     - isEmpty()
         - remove(index)                 - set(index,listElement)
         - size()                        - sort()
@@ -28,10 +28,11 @@ public class ListDemo{
         li2.addAll(li1);                //addAll(fromList)
         li2.addAll(s1);                 //addAll(fromSet)    
         
-        li3 = li1.clone();              //clone() -> copy of a list
-
+        
         System.debug('li1 - '+li1);
         System.debug('li2 - '+li2);
+        
+        li3 = li1.clone();              //clone() -> copy of a list
         System.debug('li3 (cloned li1) - '+li3);
 
         System.debug('UK in li3? '+li3.contains('UK'));     //contains() -> true/false
@@ -39,5 +40,21 @@ public class ListDemo{
 
         System.debug('li2 == li3? '+li2.equals(li3));       //equals() -> true/false
         System.debug('li1 == li3? '+li1.equals(li3));
+
+        System.debug('li1[1] = '+li1.get(1));               //get(index)
+
+        System.debug('Index of UK in li3 - '+li3.indexOf('UK'));        //indexOf()
+        System.debug('Index of USA in li3 - '+li3.indexOf('USA'));      
+        
+        System.debug('li2 empty? '+li2.isEmpty());          //isEmpty() -> true/false
+
+        System.debug('Remove li3[2] - '+li3.remove(2));     //remove(index)
+        System.debug('After removing - '+li3);
+        
+        System.debug('Size of li2 - '+li2.size());          //size()
+        
+        System.debug('li2 before sort - '+li2);
+        li2.sort();
+        System.debug('li2 after sort - '+li2);
     }
 }
