@@ -56,5 +56,9 @@ public class ListDemo{
         System.debug('li2 before sort - '+li2);
         li2.sort();                                         //sort()
         System.debug('li2 after sort - '+li2);
+
+        List<Account> accL = new List<Account>();
+        accL = [SELECT Id, Name FROM Account LIMIT 2];
+        System.debug('accL - '+accL);
     }
 }
