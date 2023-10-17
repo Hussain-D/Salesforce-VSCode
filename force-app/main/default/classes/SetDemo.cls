@@ -1,5 +1,5 @@
 /*
-List Methods:
+Set Methods:
         - add(setElement)               - addAll(fromList)              
         - addAll(fromSet)               - clear()                       
         - clone()                       - contains(listElement)
