@@ -3,6 +3,8 @@ public class GenericsObjectDemo {
         SObject obj;                                        //generic obj
         
         obj = new Account(Name='Test1',Phone='9876543211');  //instantiating
+        // obj.Name = 'Test';
+        // obj.Phone = '987654321';
         Account acc1 = (Account) obj;                        //typecasting
         System.debug('obj -> acc1 - '+acc1);
 
